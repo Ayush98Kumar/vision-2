@@ -1,0 +1,29 @@
+[project]
+name = "vision"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask",
+    "flask-socketio",
+    "flask-cors",
+    "opencv-python",
+    "numpy",
+    "mediapipe",
+    "ultralytics",
+    "torch",
+    "torchaudio",
+    "imageio[ffmpeg]",
+    "torchvision",
+]
+
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }
+torchaudio = { index = "pytorch" }
