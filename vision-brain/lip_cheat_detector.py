@@ -49,21 +49,21 @@ LIP_BOX     = [13, 312, 311, 310, 415, 308, 14, 82, 81, 80,
                76, 77, 0, 17, 61, 291]
 
 # ── Tuning ────────────────────────────────────────────────────────────────────
-CAL_FRAMES         = 20
+CAL_FRAMES         = 12
 REQUIRED_CYCLES    = 2
 STABLE_FRAMES      = 2
 EMA_ALPHA          = 0.35
 SNEEZE_MULT        = 8.0
 STD_FACTOR         = 1.2
 MIN_DELTA          = 3.0
-ALERT_HOLD_SEC     = 2.5
+ALERT_HOLD_SEC     = 2.0
 HAND_PROXIMITY     = 0.10    # normalised dist — any hand landmark within this of mouth centre
                              # ~10% of frame width ≈ finger-width at typical webcam distance
 COVER_CONFIRM      = 3       # consecutive frames required to confirm cover
 COVER_GRACE_SEC    = 0.5     # hold "covered" this long after hand leaves (flicker guard)
 # For bbox path: how many hand landmarks must fall INSIDE the mouth box
 COVER_BBOX_MIN_PTS = 3       # require ≥3 landmarks inside mouth box (not just bbox overlap)
-SUSTAINED_OPEN_SEC = 2.5     # seconds lips stay above threshold → flag cheating
+SUSTAINED_OPEN_SEC = 2.0     # seconds lips stay above threshold → flag cheating
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

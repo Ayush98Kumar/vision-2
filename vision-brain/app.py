@@ -115,12 +115,12 @@ terminated_students = set()
 _state_lock = threading.Lock()
 
 SCORE_WEIGHTS = {
-    'multi': 20,
+    'multi': 10,
     'lip': 3,
     'head': 5,
     'eye': 5,
     'hand': 5,
-    'phone': 25,
+    'phone': 15,
 }
 
 def get_score_delta(flag_summary):

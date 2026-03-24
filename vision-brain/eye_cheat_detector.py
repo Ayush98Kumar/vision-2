@@ -27,9 +27,9 @@ import urllib.request
 # ─────────────────────────────────────────────
 #  CONFIG
 # ─────────────────────────────────────────────
-LOOK_AWAY_THRESHOLD_SEC = 1.3
+LOOK_AWAY_THRESHOLD_SEC = 1.0
 
-LOOK_LEFT_THRESHOLD  = 0.18   # iris x < (0.5 - this)  → looking left
+LOOK_LEFT_THRESHOLD  = 0.13   # iris x < (0.5 - this)  → looking left
 LOOK_RIGHT_THRESHOLD = 0.13   # iris x > (0.5 + this)  → looking right  ← looser
 UPWARD_THRESHOLD     = 0.18   # iris y < (0.5 - this)  → looking up (downward allowed)
 
